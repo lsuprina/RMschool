@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 6b1219ff-213c-4e36-abd9-4bba5cbe3f35
+handle: socialNetworks
+instructions: ''
+name: 'Social networks'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_socialnetworks}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

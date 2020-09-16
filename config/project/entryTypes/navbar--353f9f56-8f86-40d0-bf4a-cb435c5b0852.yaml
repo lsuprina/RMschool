@@ -1,0 +1,74 @@
+fieldLayouts:
+  50894fd3-2b06-4ae6-9f0c-f0cb8c587053:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0e88b4f5-9ec7-46e9-83a8-eea51f1f932e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9f710753-6962-4083-a7bf-e359f9a3651b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 160d98c4-f407-4d6f-9d7c-9cd8afe4b7e9
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f5da9f1e-a4a1-4a78-84c0-9728608c768f
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: navbar
+hasTitleField: false
+name: Navbar
+section: 57d4f7a3-5e87-4d16-aed6-a1e1e2c995b1
+sortOrder: 1
+titleFormat: 'Navigation bar'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

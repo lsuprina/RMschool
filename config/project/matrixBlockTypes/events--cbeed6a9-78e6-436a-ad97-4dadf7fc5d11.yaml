@@ -1,0 +1,99 @@
+field: e0f343f5-bf12-49eb-b74e-b89a08a92090
+fieldLayouts:
+  29f993b9-acc7-4c69-93f0-715d74744d3c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: fb882e52-164e-429c-abc7-3c9de80d2d5c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: df979902-a677-4079-a560-07c547adeb8c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7e31abf0-d327-4e55-9301-863a2fd1c854
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7e31abf0-d327-4e55-9301-863a2fd1c854:
+    contentColumnType: string
+    fieldGroup: null
+    handle: eventSection
+    instructions: ''
+    name: 'Event section'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '3'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:c7fec439-ba6f-4143-9a75-eac421fb0280'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  df979902-a677-4079-a560-07c547adeb8c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: descriptionEvents
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fb882e52-164e-429c-abc7-3c9de80d2d5c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleEvents
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: events
+name: Events
+sortOrder: 4

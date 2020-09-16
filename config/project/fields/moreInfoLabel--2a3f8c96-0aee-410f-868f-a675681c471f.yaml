@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 6b1219ff-213c-4e36-abd9-4bba5cbe3f35
+handle: moreInfoLabel
+instructions: ''
+name: 'More info label'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

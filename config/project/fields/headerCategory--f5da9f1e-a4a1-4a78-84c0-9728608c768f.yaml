@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: 6b1219ff-213c-4e36-abd9-4bba5cbe3f35
+handle: headerCategory
+instructions: ''
+name: 'Header category'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: 'group:3a7eb026-21bc-4104-8b48-f870b7d9b8d6'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

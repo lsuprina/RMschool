@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: hero
+name: Hero
+propagationMethod: all
+siteSettings:
+  0967bde6-f091-4666-b685-45e13bb32dee:
+    enabledByDefault: true
+    hasUrls: true
+    template: segment\heroRotator
+    uriFormat: 'hero/{slug}'
+type: channel

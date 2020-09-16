@@ -1,0 +1,43 @@
+field: e0f343f5-bf12-49eb-b74e-b89a08a92090
+fieldLayouts:
+  84de8783-8645-4ec6-962b-f06f4e6cd431:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 67223488-f1a2-4bf8-88f5-07ccee112531
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  67223488-f1a2-4bf8-88f5-07ccee112531:
+    contentColumnType: string
+    fieldGroup: null
+    handle: hero
+    instructions: ''
+    name: Hero
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '3'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:ef251137-89c9-4576-aa61-14697e629903'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: heroRotator
+name: 'Hero rotator'
+sortOrder: 1

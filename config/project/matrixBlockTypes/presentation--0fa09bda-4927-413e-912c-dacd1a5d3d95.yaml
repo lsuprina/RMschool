@@ -1,0 +1,99 @@
+field: e0f343f5-bf12-49eb-b74e-b89a08a92090
+fieldLayouts:
+  6dd56aec-4a50-4cc2-9720-751993a451df:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 401d8e85-f282-41aa-b599-9a1b5c40ff4d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 60828b3b-af20-45e7-a350-412a29e33865
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b97a18e5-d60b-4ab8-ad55-570d492e9314
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  401d8e85-f282-41aa-b599-9a1b5c40ff4d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titlePresentation
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  60828b3b-af20-45e7-a350-412a29e33865:
+    contentColumnType: text
+    fieldGroup: null
+    handle: descriptionPresentation
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b97a18e5-d60b-4ab8-ad55-570d492e9314:
+    contentColumnType: string
+    fieldGroup: null
+    handle: presentationSection
+    instructions: ''
+    name: 'Presentation section'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '4'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:7d39eb22-1737-4478-9f1d-2a40252eb160'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: presentation
+name: Presentation
+sortOrder: 3

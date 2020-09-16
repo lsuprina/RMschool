@@ -1,0 +1,19 @@
+{% set module = module %}
+{% set categories = craft.categories().group('navigationTopics').all() %}
+
+<section class="cta-image container">
+    <div class="row">
+        <h2 class="col-12">{{module.titleArticle}}</h2>
+        <img src="{{module.imageArticle.one().url}}" alt="Background image" class="img-fluid pozadina">
+        
+        <div class="card col-12 col-md-8 col-lg-6">
+            <div class="card-body">
+                <h3 class="card-title">{{module.subtitleArticle}}</h3>
+                <p class="card-text">{{module.descriptionArticle}}</p>
+                <a href="#!" class="btn btn-outline-white">{{layout.learnMoreLabel}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
