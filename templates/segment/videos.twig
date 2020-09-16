@@ -1,0 +1,20 @@
+{% set module = module %}
+
+<section class="container-fluid pt-5 rmvideos">
+    <img src="{{module.videoImage.one().url}}" alt="">
+    <div class="container">
+        <h3 class="col mb-3 font-weight-bolder pt-5">{{module.videoTitle}}</h2>
+    </div>
+    <div class="videos container d-flex pb-5">
+
+        {% for video in module.videoUrl.all() %}
+            <div class="video-card modal-body col-9 col-md-6 col-xl-4 mx-0 my-3 p-2">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="{{video.video}}" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3">{{video.title}}</p>
+            </div>
+        {% endfor %}
+
+    </div>
+</section>

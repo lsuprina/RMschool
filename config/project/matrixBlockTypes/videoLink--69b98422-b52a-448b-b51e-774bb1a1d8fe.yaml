@@ -1,0 +1,62 @@
+field: e12922f2-d58c-47c0-890e-5d5f5f1dc98b
+fieldLayouts:
+  44765ea7-b2af-4e1b-bc1a-917d50e56675:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 02a56483-ffcf-4031-a54e-29966a07d174
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 384d078d-2f91-453a-abbd-909780a3dab9
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  02a56483-ffcf-4031-a54e-29966a07d174:
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoTitle
+    instructions: ''
+    name: 'Video title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  384d078d-2f91-453a-abbd-909780a3dab9:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: videoUrl
+    instructions: ''
+    name: 'Video url'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: videoLink
+name: 'Video link'
+sortOrder: 1

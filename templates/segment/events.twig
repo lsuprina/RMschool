@@ -1,1 +1,62 @@
 {% set module = module %}
+{% set upcomingEvents = module.eventSection.orderBy('eventDate desc').all() %}
+{% set pastEvents = module.eventSection.orderBy('eventDate asc').all() %}
+{% set filterKey = "" %}
+{% set events = "" %}
+
+<section class="container-fluid events">
+    <div class="container">
+        <h2 class="col mb-3 font-weight-bolder">{{module.titleEvents}}</h2>
+        <p class="col text-justify mb-5">{{module.descriptionEvents}}</p>
+        <div class="filter-events pt-5">
+            <button class="btn btn-outline-success">Filter events</button>
+            <button class="btn btn-outline-success filter" data-rel="1">Upcoming</button>
+            <button class="btn btn-outline-success filter" data-rel="2">Past</button>
+        </div>
+
+        <div class="event-cards pt-3 d-flex justify-content-between" id="gallery">
+        
+            {#% for event in module.eventSection.all() %}
+                {% if event.eventDate > now %}
+                    {% set events = module.eventSection.orderBy('eventDate desc').limit(3).all() %}
+                    {% set filterKey = 1 %}
+                {% elseif event.eventDate < now %}
+                    {% set events = module.eventSection.orderBy('eventDate asc').limit(3).all() %}
+                    {% set filterKey = 2 %}
+                {% endif %}
+            {% endfor %#}
+
+
+            {% for event in module.eventSection.all() %}
+                {% if event.eventDate > now %}
+                    {#% set events = module.eventSection.orderBy('eventDate desc').limit(3).all() %#}
+                    {% set filterKey = 1 %}
+                {% elseif event.eventDate < now %}
+                    {#% set events = module.eventSection.orderBy('eventDate asc').limit(3).all() %#}
+                    {% set filterKey = 2 %}
+                {% endif %}
+                <div class="event-card animation {{filterKey}}">
+                    <div class="mb-n2 overflow-hidden d-flex justify-content-center align-items-center">
+                        <img src="assets/img/jpg/placeholder.jpg" alt="">
+                    </div>
+                    <span class="card-date mt-n4 p-2">{{event.eventDate|date('d.m.Y.')}}</span>
+                    <div class="event-card-text p-4 my-3">
+                        <span class="row font-weight-bold">{{event.title}}</span>
+                        <span class="row">{{event.subtitle}}</span>
+                    </div>
+                    <button class="btn btn-outline-primary ml-2">{{layout.moreDetailsLabel}}</button>
+                </div>
+            {% endfor %}
+
+        </div>
+        <div class="d-flex justify-content-end p-5">
+            <button class="btn btn-outline-primary ml-2">{{layout.showEventsLabel}}</button>
+        </div>
+
+        <div class="p-4 d-flex align-items-center justify-content-center">
+            <button class="btn btn-outline-primary ml-2 mt-4 become-button font-weight-light">Become an <span class="font-weight-bold">rm ambassador</span></button>
+            <button class="btn btn-outline-success ml-2 mt-4 become-button font-weight-light">Become a <span class="font-weight-bold">young rm ambassador</span></button>
+        </div>
+    </div>
+   
+</section>

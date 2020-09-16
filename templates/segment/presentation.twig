@@ -2,24 +2,27 @@
 
 <section class="container-fluid ambassadors">
     <div class="container">
-    <h2 class="col mb-3 font-weight-light">{{module.titlePresentation}}</h2>
-    <p class="col text-justify mb-5">{{module.descriptionPresentation}}</p>
-        <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <h2 class="col mb-3 font-weight-light">{{module.titlePresentation}}</h2>
+        <p class="col text-justify mb-5">{{module.descriptionPresentation}}</p>
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
 
-            {% for entry in module.presentationSection.all() %}
-                <div class="card col-6 px-2 my-2">
-                    <img src="{{entry.image.one().url}}" alt="">
-                    <div class="pt-3 card-text">
-                        <h3 class="card-title">{{entry.title}}</h3>
-                        <div class="card-footer d-flex justify-content-between">
-                            <div class="card-footer-left"><a href="{{entry.pdfpresentation.one().url}}" target="_blank">{{layout.posterPresentationLabel}}</a></div>
-                            <div class="card-footer-right">{{entry.postDate|date('d.m.Y.')}}</div>
+                {% for entry in module.presentationSection.all() %}
+                    <div class="card col-6 px-2 my-2">
+                        <img src="{{entry.image.one().url}}" alt="">
+                        <div class="pt-3 card-text">
+                            <h3 class="card-title">{{entry.title}}</h3>
+                            <div class="card-footer d-flex justify-content-between">
+                                <div class="card-footer-left"><a href="{{entry.pdfpresentation.one().url}}" target="_blank">{{layout.posterPresentationLabel}}</a></div>
+                                <div class="card-footer-right">{{entry.postDate|date('d.m.Y.')}}</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endfor %}         
+                {% endfor %}         
+            </div>
+
+        <div class="row d-flex justify-content-end pr-3 pt-5">
+            <a href="#!" class="btn btn-outline-white">{{layout.showMoreLabel}}</a></div>
         </div>
-        
-    <a href="#!" class="btn btn-outline-white">{{layout.showMoreLabel}}</a></div>
-   
+
+   </div>
 </section>

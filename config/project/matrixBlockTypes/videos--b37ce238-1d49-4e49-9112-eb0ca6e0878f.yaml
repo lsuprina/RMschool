@@ -1,11 +1,11 @@
 field: e0f343f5-bf12-49eb-b74e-b89a08a92090
 fieldLayouts:
-  29f993b9-acc7-4c69-93f0-715d74744d3c:
+  4bf384f5-b771-4741-8211-c3d03c75f739:
     tabs:
       -
         elements:
           -
-            fieldUid: fb882e52-164e-429c-abc7-3c9de80d2d5c
+            fieldUid: 21e60286-b5c2-44b9-95f1-93ca5d85fbc9
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: df979902-a677-4079-a560-07c547adeb8c
+            fieldUid: a7c33f69-9eb3-4886-aaa3-f5e7753de473
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7e31abf0-d327-4e55-9301-863a2fd1c854
+            fieldUid: d99fd25f-dba2-409c-9722-a6f250396b6c
             instructions: null
             label: null
             required: false
@@ -34,66 +34,78 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  7e31abf0-d327-4e55-9301-863a2fd1c854:
+  21e60286-b5c2-44b9-95f1-93ca5d85fbc9:
     contentColumnType: string
     fieldGroup: null
-    handle: eventSection
+    handle: videoImage
     instructions: ''
-    name: 'Event section'
+    name: 'Background image'
     searchable: false
     settings:
       allowSelfRelations: false
-      limit: ''
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  a7c33f69-9eb3-4886-aaa3-f5e7753de473:
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoTitle
+    instructions: ''
+    name: 'Video title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d99fd25f-dba2-409c-9722-a6f250396b6c:
+    contentColumnType: string
+    fieldGroup: null
+    handle: videoUrl
+    instructions: ''
+    name: 'Video url'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '3'
       localizeRelations: false
       selectionLabel: ''
       showSiteMenu: true
       source: null
       sources:
-        - 'section:c7fec439-ba6f-4143-9a75-eac421fb0280'
+        - 'section:093c3fe9-83bd-41d7-a933-c3e656f3574c'
       targetSiteId: null
       validateRelatedElements: false
       viewMode: null
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  df979902-a677-4079-a560-07c547adeb8c:
-    contentColumnType: text
-    fieldGroup: null
-    handle: descriptionEvents
-    instructions: ''
-    name: Description
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  fb882e52-164e-429c-abc7-3c9de80d2d5c:
-    contentColumnType: text
-    fieldGroup: null
-    handle: titleEvents
-    instructions: ''
-    name: Title
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-handle: events
-name: Events
-sortOrder: 4
+handle: videos
+name: Videos
+sortOrder: 5

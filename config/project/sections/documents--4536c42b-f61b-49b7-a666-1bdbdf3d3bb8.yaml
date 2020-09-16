@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: documents
+name: Documents
+propagationMethod: all
+siteSettings:
+  0967bde6-f091-4666-b685-45e13bb32dee:
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'document/{slug}'
+type: channel

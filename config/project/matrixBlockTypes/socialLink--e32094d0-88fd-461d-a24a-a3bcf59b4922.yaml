@@ -1,11 +1,11 @@
-field: 160d98c4-f407-4d6f-9d7c-9cd8afe4b7e9
+field: 6b338a19-9dc3-4a10-9fa7-d324f5c60c4d
 fieldLayouts:
-  9611d621-39a2-4327-8ea6-6ae603a43a0a:
+  ee02f3d9-7253-48bc-a3ce-c7b6a611e12e:
     tabs:
       -
         elements:
           -
-            fieldUid: 4a1775f7-e4ce-407f-b568-7fb63d019a03
+            fieldUid: 6afa1bc1-7908-4558-aa63-69cc006ff789
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 19dd2ee0-1bff-4667-a021-39a787224265
+            fieldUid: d3ab2053-a86a-4b83-8ab5-8d7d99044d80
             instructions: null
             label: null
             required: false
@@ -25,20 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  19dd2ee0-1bff-4667-a021-39a787224265:
-    contentColumnType: string(255)
-    fieldGroup: null
-    handle: socialLink
-    instructions: ''
-    name: 'Social link'
-    searchable: false
-    settings:
-      maxLength: '255'
-      placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Url
-  4a1775f7-e4ce-407f-b568-7fb63d019a03:
+  6afa1bc1-7908-4558-aa63-69cc006ff789:
     contentColumnType: string
     fieldGroup: null
     handle: socialIcon
@@ -74,29 +61,7 @@ fields:
           __assoc__:
             -
               - label
-              - Youtube
-            -
-              - value
-              - 'fa fa-youtube-play'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Instagram
-            -
-              - value
-              - 'fa fa-instagram'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - 'Linked In'
+              - LinkedIn
             -
               - value
               - 'fa fa-linkedin-square'
@@ -106,6 +71,19 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
+  d3ab2053-a86a-4b83-8ab5-8d7d99044d80:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: socialUrl
+    instructions: ''
+    name: 'Social Url'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
 handle: socialLink
 name: 'Social link'
 sortOrder: 1
