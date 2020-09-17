@@ -29,8 +29,8 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: socialIcon
-    instructions: ''
-    name: 'Social icon'
+    instructions: 'Choose a social network'
+    name: 'Social network'
     searchable: false
     settings:
       optgroups: true
@@ -75,8 +75,8 @@ fields:
     contentColumnType: string(255)
     fieldGroup: null
     handle: socialUrl
-    instructions: ''
-    name: 'Social Url'
+    instructions: 'Enter the URL to your social network page'
+    name: URL
     searchable: false
     settings:
       maxLength: '255'
@@ -85,5 +85,5 @@ fields:
     translationMethod: none
     type: craft\fields\Url
 handle: socialLink
-name: 'Social link'
+name: 'Social network'
 sortOrder: 1

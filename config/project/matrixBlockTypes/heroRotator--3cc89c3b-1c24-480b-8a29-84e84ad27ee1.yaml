@@ -21,7 +21,7 @@ fields:
     fieldGroup: null
     handle: hero
     instructions: ''
-    name: Hero
+    name: Slide
     searchable: false
     settings:
       allowSelfRelations: false
@@ -39,5 +39,5 @@ fields:
     translationMethod: site
     type: craft\fields\Entries
 handle: heroRotator
-name: 'Hero rotator'
+name: 'Slides block'
 sortOrder: 1

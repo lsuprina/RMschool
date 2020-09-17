@@ -1,0 +1,77 @@
+field: 063f1856-6981-4caa-85ca-5a2842fe313f
+fieldLayouts:
+  39b548bf-cadb-46aa-bda6-0905cbf7f7ba:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f4a52dcb-b5c7-4620-9218-57c2f75e440b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9c9768c2-5ef2-41b7-aa63-0ee058f5ab70
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9c9768c2-5ef2-41b7-aa63-0ee058f5ab70:
+    contentColumnType: text
+    fieldGroup: null
+    handle: descriptionAbout
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  f4a52dcb-b5c7-4620-9218-57c2f75e440b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleAbout
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contentAbout
+name: Content
+sortOrder: 1

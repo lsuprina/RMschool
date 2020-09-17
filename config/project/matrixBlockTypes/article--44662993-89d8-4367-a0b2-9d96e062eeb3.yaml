@@ -132,5 +132,5 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
 handle: article
-name: Article
+name: 'Article block'
 sortOrder: 2

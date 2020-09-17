@@ -95,5 +95,5 @@ fields:
     translationMethod: site
     type: craft\fields\Entries
 handle: presentation
-name: Presentation
+name: 'Presentation block'
 sortOrder: 3

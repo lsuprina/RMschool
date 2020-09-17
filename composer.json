@@ -1,6 +1,6 @@
 {
   "require": {
-    "craftcms/cms": "^3.5.0",
+    "craftcms/cms": "3.5.10.1",
     "craftcms/redactor": "2.7.4",
     "focuslabllc/craft-cheat-sheet": "2.0.3",
     "vlucas/phpdotenv": "^3.4.0"

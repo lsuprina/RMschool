@@ -95,5 +95,5 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
 handle: events
-name: Events
+name: 'Events block'
 sortOrder: 4

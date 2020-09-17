@@ -1,11 +1,11 @@
 enableVersioning: true
-handle: youtube
-name: 'Youtube videos'
+handle: aboutUs
+name: 'About us'
 propagationMethod: all
 siteSettings:
   0967bde6-f091-4666-b685-45e13bb32dee:
     enabledByDefault: true
     hasUrls: true
-    template: null
-    uriFormat: 'youtube/{slug}'
-type: channel
+    template: page\aboutUs
+    uriFormat: about-us
+type: single

@@ -29,8 +29,8 @@ fields:
     contentColumnType: string(255)
     fieldGroup: null
     handle: socialLink
-    instructions: ''
-    name: 'Social link'
+    instructions: 'Enter the URL to your social network page'
+    name: URL
     searchable: false
     settings:
       maxLength: '255'
@@ -42,8 +42,8 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: socialIcon
-    instructions: ''
-    name: 'Social icon'
+    instructions: 'Choose a social network'
+    name: 'Social network'
     searchable: false
     settings:
       optgroups: true
@@ -99,7 +99,7 @@ fields:
               - 'Linked In'
             -
               - value
-              - 'fa fa-linkedin-square'
+              - 'fa fa-linkedin'
             -
               - default
               - ''
@@ -107,5 +107,5 @@ fields:
     translationMethod: none
     type: craft\fields\Dropdown
 handle: socialLink
-name: 'Social link'
+name: 'Social network'
 sortOrder: 1

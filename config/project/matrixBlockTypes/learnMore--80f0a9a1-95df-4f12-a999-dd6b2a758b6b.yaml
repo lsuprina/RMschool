@@ -1,11 +1,11 @@
-field: e0f343f5-bf12-49eb-b74e-b89a08a92090
+field: 063f1856-6981-4caa-85ca-5a2842fe313f
 fieldLayouts:
-  4bf384f5-b771-4741-8211-c3d03c75f739:
+  4e79db3f-9f22-445a-8452-944e5981444b:
     tabs:
       -
         elements:
           -
-            fieldUid: 21e60286-b5c2-44b9-95f1-93ca5d85fbc9
+            fieldUid: 9b6f32dd-6e58-4258-84e1-39b72a26a406
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a7c33f69-9eb3-4886-aaa3-f5e7753de473
+            fieldUid: 3518821f-2d9c-419f-9f6c-3457ca8e43fe
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d99fd25f-dba2-409c-9722-a6f250396b6c
+            fieldUid: f97713a1-0546-40e0-92ce-0df6a863b2ee
             instructions: null
             label: null
             required: false
@@ -34,43 +34,12 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  21e60286-b5c2-44b9-95f1-93ca5d85fbc9:
-    contentColumnType: string
-    fieldGroup: null
-    handle: videoImage
-    instructions: ''
-    name: 'Background image'
-    searchable: false
-    settings:
-      allowSelfRelations: false
-      allowedKinds: null
-      defaultUploadLocationSource: 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
-      defaultUploadLocationSubpath: ''
-      limit: '1'
-      localizeRelations: false
-      restrictFiles: ''
-      selectionLabel: ''
-      showSiteMenu: true
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
-      singleUploadLocationSubpath: ''
-      source: null
-      sources:
-        - 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
-      targetSiteId: null
-      useSingleFolder: false
-      validateRelatedElements: false
-      viewMode: list
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Assets
-  a7c33f69-9eb3-4886-aaa3-f5e7753de473:
+  3518821f-2d9c-419f-9f6c-3457ca8e43fe:
     contentColumnType: text
     fieldGroup: null
-    handle: videoTitle
+    handle: descriptionLearnMore
     instructions: ''
-    name: 'Video title'
+    name: Description
     searchable: false
     settings:
       byteLimit: null
@@ -84,12 +53,31 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  d99fd25f-dba2-409c-9722-a6f250396b6c:
+  9b6f32dd-6e58-4258-84e1-39b72a26a406:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleLearnMore
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f97713a1-0546-40e0-92ce-0df6a863b2ee:
     contentColumnType: string
     fieldGroup: null
-    handle: videoUrl
+    handle: cardsAbout
     instructions: ''
-    name: 'Video url'
+    name: Cards
     searchable: false
     settings:
       allowSelfRelations: false
@@ -99,13 +87,13 @@ fields:
       showSiteMenu: true
       source: null
       sources:
-        - 'section:093c3fe9-83bd-41d7-a933-c3e656f3574c'
+        - 'section:ddaf32a5-8670-415d-8b4c-8118092a7fd4'
       targetSiteId: null
       validateRelatedElements: false
       viewMode: null
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-handle: videos
-name: 'Videos block'
-sortOrder: 5
+handle: learnMore
+name: 'Learn more'
+sortOrder: 2
