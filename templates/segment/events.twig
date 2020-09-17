@@ -9,13 +9,26 @@
         <h2 class="col mb-3 font-weight-bolder">{{module.titleEvents}}</h2>
         <p class="col text-justify mb-5">{{module.descriptionEvents}}</p>
         <div class="filter-events pt-5">
-            <button class="btn btn-outline-success">Filter events</button>
+            <button class="btn btn-outline-success filter-events-title">Filter events</button>
             <button class="btn btn-outline-success filter" data-rel="1">Upcoming</button>
             <button class="btn btn-outline-success filter" data-rel="2">Past</button>
         </div>
 
-        <div class="event-cards pt-3 d-flex justify-content-between" id="gallery">
-        
+        <div class="event-cards pt-3 d-flex flex-wrap justify-content-between align-items-center">
+
+            <?php 
+                for($i=1; $i <= 3; $i++){
+                    Site::getSegment('event_card', 
+                    array(
+                    'event-card-date'=>'9.11.2020.',
+                    'event-card-title'=>'The future of Education',
+                    'event-card-subtitle' =>'Virtual Conference',
+                    'event-card-img' => 'assets/img/jpg/placeholder.jpg'
+                    ));
+                }
+            ?>
+        </div>
+
             {#% for event in module.eventSection.all() %}
                 {% if event.eventDate > now %}
                     {% set events = module.eventSection.orderBy('eventDate desc').limit(3).all() %}
