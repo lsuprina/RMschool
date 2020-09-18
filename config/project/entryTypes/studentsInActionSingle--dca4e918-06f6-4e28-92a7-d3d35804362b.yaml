@@ -1,0 +1,38 @@
+fieldLayouts:
+  12351e7e-af42-44cb-ab0e-ae2a62cd3435:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: studentsInActionSingle
+hasTitleField: false
+name: 'STUDENTS IN ACTION single'
+section: 61fad334-e8ff-426c-af7a-0b69bdc15d34
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

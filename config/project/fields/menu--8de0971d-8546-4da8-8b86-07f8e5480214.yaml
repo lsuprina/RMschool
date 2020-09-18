@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 6b1219ff-213c-4e36-abd9-4bba5cbe3f35
+handle: menu
+instructions: ''
+name: Menu
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_menu}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

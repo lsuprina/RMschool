@@ -1,4 +1,4 @@
-dateModified: 1600434295
+dateModified: 1600440689
 email:
   fromEmail: lidija.suprina@creative-square.agency
   fromName: school.test
@@ -16,6 +16,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
