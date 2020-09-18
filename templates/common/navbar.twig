@@ -1,33 +1,40 @@
-
 {% set navbar = craft.entries().section('navbar').one() %}
 {% set homepage = craft.entries().section('homepage').one() %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<div class="container-fluid">
+	<nav class="navbar navbar-expand-xl pt-0 flex-nowrap navbar-light">
 
-  <a class="navbar-brand" href="{{homepage.uri}}"><img src="{{navbar.logo.one().url}}" alt="Logo"></a>
-  <a class="navbar-brand" href="{{homepage.uri}}"><img src="{{navbar.euText.one().url}}" alt="EU text"></a>
+		<div class="logos">
+      <a href="{{homepage.uri}}" class="navbar-brand py-0">
+        <img src="{{navbar.logo.one().url}}" alt="header" title="header" id="logo" class="img-fluid mb-2 mt-4">
+        
+      </a>
+      <a href="{{homepage.uri}}" class="navbar-brand py-0">
+          <img src="{{navbar.euText.one().url}}" alt="header" title="header" id="logo" class="img-fluid mb-2 mt-4"> 
+      </a>
+    </div>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+		<button class="navbar-toggler d-flex d-xl-none justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon mx-3"></span>
+		</button>
 
-  <div class="collapse navbar-collapse d-flex flex-column" id="navbarText">
-
-      <ul class="list-group list-group-horizontal-xl ml-auto">
-        {% set socialNetworks = navbar.socialNetworks.all() %}
-        {% for socialNetwork in socialNetworks %}
-          <li class="list-group-item border-0 p-1 ml-3"><a class="{{socialNetwork.socialIcon.value}} icons" href="{{socialNetwork.socialLink}}" target="_blank"></a></li>
-        {% endfor %}
-      </ul>
-
-      <ul class="list-group list-group-horizontal-xl ml-auto mt-1">
-        {% for categories in navbar.headerCategory.one() %}
-          {% for category in categories %}
-            <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="{{category.topicUrl}}">{{category.topicName|upper}}</a></li>            
+		<div class="collapse navbar-collapse mt-auto" id="navbarTogglerDemo02">
+      <div class="ml-auto pr-2 pt-4 pt-lg-0">
+        <ul class="list-group list-group-horizontal ml-auto row justify-content-center justify-content-xl-end">
+          {% set socialNetworks = navbar.socialNetworks.all() %}
+          {% for socialNetwork in socialNetworks %}
+            <li class="list-group-item border-0 p-1 ml-3 "><a class="{{socialNetwork.socialIcon.value}} icons text-decoration-none" 
+              href="{{socialNetwork.socialLink}}" target="_blank"></a></li>
           {% endfor %}
-        {% endfor %}
-      </ul>
-
-  </div>
-  
-</nav>
+        </ul>
+        <ul class="list-group list-group-horizontal-xl ml-auto mt-1 mb-3 row">
+          {% for categories in navbar.headerCategory.one() %}
+            {% for category in categories %}
+              <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="{{category.topicUrl}}">{{category.topicName|upper}}</a></li>            
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+		</div>		
+	</nav>
+</div>	

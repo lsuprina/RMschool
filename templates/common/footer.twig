@@ -7,15 +7,18 @@
     <div class="container">
         <div class="top-row row col-12 py-4 mb-5">
             <span class="share">Share Page:</span>
-            <ul class="list-group list-group-horizontal-xl">
+            <ul class="list-group list-group-horizontal">
                 {% for socialNetwork in entries.sharePage.all() %}
-                    <li class="list-group-item border-0 p-1 ml-3 "><a class="{{socialNetwork.socialIcon.value}} icons" href="{{socialNetwork.socialUrl}}" target="_blank"></a></li>
+                    <li class="list-group-item border-0 p-1 ml-3"><a class="{{socialNetwork.socialIcon.value}} icons text-decoration-none" 
+                        href="{{socialNetwork.socialUrl}}" target="_blank"></a></li>
                 {% endfor %}
             </ul>
         </div>
+
         <div class="middle-row row">
+
             {% for category in entries.footerCategory.all() %}
-                <div class="col-3">
+                <div class="col-6 col-lg">
                     <h5>{{category.title}}</h5>
                     <ul class="list-group list-group-flush">
                         {% for topic in category.topic.all() %}
@@ -23,63 +26,41 @@
                         {% endfor %}
                     </ul>
                 </div>
-            {% endfor %}
-
-            <div class="col-3"></div>
-            <div class="col-3">
-                <a href="{{homepage.uri}}"><img src="{{entries.logo.one().url}}" alt="Logo"></a>
-                <a href="{{homepage.uri}}"><img src="{{entries.euText.one().url}}" alt="EU text"></a>
+            {% endfor %}   
+            <div class="col offset-xl-3 offset-md-3 offset-sm-3">
+                <img class="img-fluid" src="{{entries.logo.one().url}}" alt="Logo">
+                <img class="img-fluid" src="{{entries.euText.one().url}}" alt="EU text">
             </div>
 
         </div>
-        <div class="bottom-row row col-12 py-4 mt-4">
-            <div class="footer-info col-5 d-flex">
-                {% for document in entries.footerDocs.all() %}
-                    <a href="{{document.document.one().url}}" style="padding:5px">{{document.title|upper}}</a>
 
+
+        <div class="bottom-row row col-12 py-4 mt-4 align-items-center">
+
+            <div class="footer-info col-12 col-sm-5 d-flex ">
+                {% for document in entries.footerDocs.all() %}
+                    <a href="{{document.document.one().url}}" target="_blank" class="mx-5">{{document.title|upper}}</a>
                 {% endfor %}
             </div>
-            <div class="d-flex align-items-center ml-auto">
+
+            <div class="d-flex col-12 col-sm-5 offset-2 align-items-center justify-content-sm-end justify-content-md-end ml-auto">
                 <span class="connect">Connect with us:</span>
-                <ul class="list-group list-group-horizontal-xl">
+                <ul class="list-group list-group-horizontal">
                     {% for socialNetwork in entries.socialNetworks.all() %}
-                        <li class="list-group-item border-0 p-1 ml-3 "><a class="{{socialNetwork.socialIcon.value}} icons" href="{{socialNetwork.socialLink}}" target="_blank"></a></li>
+                        <li class="list-group-item border-0 p-1 ml-3 "><a class="{{socialNetwork.socialIcon.value}} icons text-decoration-none" 
+                            href="{{socialNetwork.socialLink}}" target="_blank"></a></li>
                     {% endfor %}
                 </ul>
-            </div>    
+            </div>  
+
         </div>  
+        
     </div>
 </footer>
 
 <?php // Site::getSegment('cookie_accept'); ?>
 
-  <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
-
-  <script type="text/javascript" src="/assets/js/mdb.min.js"></script>
-    
-  <script type="text/javascript" src="/assets/js/script.min.js" charset="utf-8"></script>
-
-    <script type="text/javascript">
-    // Animation
-    new WOW().init();
-
-    // Filter
-    $(function () {
-      var selectedClass = "";
-      $(".filter").click(function () {
-        selectedClass = $(this).attr("data-rel");
-        $("#gallery").fadeTo(100, 0.1);
-        $("#gallery div").not("." + selectedClass).fadeOut().removeClass('animation');
-        setTimeout(function () {
-          $("." + selectedClass).fadeIn().addClass('animation');
-          $("#gallery").fadeTo(300, 1);
-          $(".event-card-text").removeAttr('style');
-        }, 300);
-      });
-    });
-
-  </script>
-
+<script src="./assets/js/script.min.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>

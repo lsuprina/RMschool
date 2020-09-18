@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 6b1219ff-213c-4e36-abd9-4bba5cbe3f35
+handle: showEvents
+instructions: ''
+name: 'Show events'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:c7fec439-ba6f-4143-9a75-eac421fb0280'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

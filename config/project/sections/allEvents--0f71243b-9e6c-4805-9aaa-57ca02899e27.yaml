@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: allEvents
+name: 'All events'
+propagationMethod: all
+siteSettings:
+  0967bde6-f091-4666-b685-45e13bb32dee:
+    enabledByDefault: true
+    hasUrls: true
+    template: page\allEvents
+    uriFormat: all-events
+type: single

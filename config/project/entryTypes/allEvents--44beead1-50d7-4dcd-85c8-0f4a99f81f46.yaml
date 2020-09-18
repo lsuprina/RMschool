@@ -1,5 +1,5 @@
 fieldLayouts:
-  1dfef4f7-4214-455a-8929-8a90ed2de632:
+  70d10c24-a19a-4923-b633-5226ef66e58b:
     tabs:
       -
         elements:
@@ -27,39 +27,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 85e693d4-43fa-4350-9216-28f926cfa9bb
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 5c91fda2-e84e-4484-bd53-c79ed3381b02
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: d98e34e6-36c6-40af-bee4-4adab40fad3c
-            instructions: null
-            label: null
-            required: false
+            fieldUid: e7f18898-8c9a-4955-9c1e-b38d5a880bf0
+            instructions: 'Add an existing or a new event'
+            label: 'Add event'
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-handle: event
-hasTitleField: true
-name: Event
-section: c7fec439-ba6f-4143-9a75-eac421fb0280
+handle: allEvents
+hasTitleField: false
+name: 'All events'
+section: 0f71243b-9e6c-4805-9aaa-57ca02899e27
 sortOrder: 1
-titleFormat: null
+titleFormat: 'All events'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
