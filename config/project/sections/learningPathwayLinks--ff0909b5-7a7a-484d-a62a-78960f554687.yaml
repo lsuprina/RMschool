@@ -1,11 +1,11 @@
 enableVersioning: true
-handle: studentsInAction
-name: 'Students in action'
+handle: learningPathwayLinks
+name: 'Learning pathway links'
 propagationMethod: all
 siteSettings:
   0967bde6-f091-4666-b685-45e13bb32dee:
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: 'students-in-action/{slug}'
+    uriFormat: 'learning-pathway-links/{slug}'
 type: channel

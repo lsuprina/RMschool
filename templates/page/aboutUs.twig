@@ -1,5 +1,31 @@
 {% extends "layout" %}
 
 {% block main %}
+    {% set entry = craft.entries().section('aboutUs').one() %}
 
+    <section class="about-section container-fluid p-0 m-0">
+    
+        <img src="{{entry.image.one().url}}" alt="">
+
+        <div class="container">
+
+            {% set titleAbout = entry.title|split(' ',3) %}
+
+            <div class="row">
+                <h2 class="bg-success p-2">{{titleAbout[0]}} {{titleAbout[1]}}</h2>
+            </div>
+            <div class="row">
+                <h2 class="bg-success offset-1 p-2 mt-3">{{titleAbout[2]}}</h2>
+            </div>
+
+        </div>
+    </section>
+
+    {% set entry = craft.entries().section('aboutUs').one() %}
+
+    {% if entry['aboutPageBlocks'] is defined %}
+        {% for module in entry.aboutPageBlocks.all() %}
+            {% include "segment/" ~ module.type ~ '.twig' with {'block' : module} %}
+        {% endfor %}
+    {% endif %}
 {% endblock %}

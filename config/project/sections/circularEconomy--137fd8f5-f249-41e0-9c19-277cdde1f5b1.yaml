@@ -1,11 +1,11 @@
 enableVersioning: true
-handle: teachingResources
-name: 'Teaching resources'
+handle: circularEconomy
+name: 'Circular economy'
 propagationMethod: all
 siteSettings:
   0967bde6-f091-4666-b685-45e13bb32dee:
     enabledByDefault: true
     hasUrls: true
-    template: page\teachingResources
-    uriFormat: teaching-resources
+    template: null
+    uriFormat: circular-economy
 type: single

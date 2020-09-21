@@ -28,8 +28,9 @@
           {% endfor %}
         </ul>
         <ul class="list-group list-group-horizontal-xl ml-auto mt-1 mb-3 row">
-          {% for menuLink in navbar.menu.one() %}
-              <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="{{menuLink}}">{{menuLink}}</a></li>            
+          {% set menuLinks = navbar.menu.all() %}
+          {% for menuLink in menuLinks %}
+              <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="{{menuLink.menuLink}}">{{menuLink.menuLink.getCustomText()|upper}}</a></li>          
           {% endfor %}
         </ul>
       </div>

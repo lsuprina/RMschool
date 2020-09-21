@@ -30,7 +30,7 @@ fieldLayouts:
         sortOrder: 1
 handle: teachingResources
 hasTitleField: false
-name: 'TEACHING RESOURCES'
+name: 'Teaching resources'
 section: 48f2ee87-98aa-4762-8362-627f66290076
 sortOrder: 1
 titleFormat: '{section.name|raw}'

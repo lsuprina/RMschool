@@ -1,11 +1,11 @@
-field: 063f1856-6981-4caa-85ca-5a2842fe313f
+field: 028f6018-5444-44d0-b254-cfea8e4742e5
 fieldLayouts:
-  4e79db3f-9f22-445a-8452-944e5981444b:
+  16a71373-1abe-4878-9470-8289308221d4:
     tabs:
       -
         elements:
           -
-            fieldUid: 9b6f32dd-6e58-4258-84e1-39b72a26a406
+            fieldUid: d6304a7c-1afe-4cc9-b83f-958473b1b063
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3518821f-2d9c-419f-9f6c-3457ca8e43fe
+            fieldUid: 4fcf62f3-6f0e-43a1-9505-12559973cde9
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f97713a1-0546-40e0-92ce-0df6a863b2ee
+            fieldUid: b685883e-c747-4bc8-83a5-367aa36ce502
             instructions: null
             label: null
             required: false
@@ -34,48 +34,38 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  3518821f-2d9c-419f-9f6c-3457ca8e43fe:
+  4fcf62f3-6f0e-43a1-9505-12559973cde9:
     contentColumnType: text
     fieldGroup: null
-    handle: descriptionLearnMore
+    handle: descriptionNetwork
     instructions: ''
     name: Description
     searchable: false
     settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\PlainText
-  9b6f32dd-6e58-4258-84e1-39b72a26a406:
-    contentColumnType: text
-    fieldGroup: null
-    handle: titleLearnMore
-    instructions: ''
-    name: Title
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  f97713a1-0546-40e0-92ce-0df6a863b2ee:
+    type: craft\redactor\Field
+  b685883e-c747-4bc8-83a5-367aa36ce502:
     contentColumnType: string
     fieldGroup: null
-    handle: cardsAbout
+    handle: cardsNetwork
     instructions: ''
     name: Cards
     searchable: false
@@ -94,6 +84,25 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-handle: learnMore
-name: 'Learn more'
+  d6304a7c-1afe-4cc9-b83f-958473b1b063:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleNetwork
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: institutionsNetwork
+name: Institutions
 sortOrder: 2

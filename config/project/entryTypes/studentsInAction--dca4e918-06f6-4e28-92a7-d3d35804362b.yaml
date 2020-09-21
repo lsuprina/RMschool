@@ -1,5 +1,5 @@
 fieldLayouts:
-  ae71e2a0-b399-464c-bb95-0d9199f0d7f9:
+  12351e7e-af42-44cb-ab0e-ae2a62cd3435:
     tabs:
       -
         elements:
@@ -10,8 +10,8 @@ fieldLayouts:
             class: null
             disabled: false
             id: null
-            instructions: ''
-            label: ''
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
@@ -26,30 +26,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
-          -
-            fieldUid: 5c91fda2-e84e-4484-bd53-c79ed3381b02
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 063f1856-6981-4caa-85ca-5a2842fe313f
-            instructions: ''
-            label: 'Page blocks'
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: Content
         sortOrder: 1
-handle: aboutUs
-hasTitleField: true
-name: 'About us'
-section: 98a22aa3-561d-407e-b1ad-5bba63d6eb71
+handle: studentsInAction
+hasTitleField: false
+name: 'Students in action'
+section: 61fad334-e8ff-426c-af7a-0b69bdc15d34
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -1,5 +1,5 @@
 fieldLayouts:
-  0f2e00b2-39a0-45d9-934d-5d163c1c1891:
+  5ce64404-b945-450b-8276-98eb8d6fd278:
     tabs:
       -
         elements:
@@ -28,6 +28,15 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 5c91fda2-e84e-4484-bd53-c79ed3381b02
+            instructions: ''
+            label: 'Background image'
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3a6afe25-67a1-4b72-ae4c-12618a865d72
             instructions: null
             label: null
             required: false
@@ -36,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 1784873d-1ebf-4125-8d11-8c4ef2ac050d
+            fieldUid: 028f6018-5444-44d0-b254-cfea8e4742e5
             instructions: null
             label: null
             required: false
@@ -46,11 +55,11 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: studentsInAction
+handle: ourNetwork
 hasTitleField: true
-name: 'Students in action'
-section: 7d39eb22-1737-4478-9f1d-2a40252eb160
+name: 'Our network'
+section: ed63f09f-b717-4d32-ac79-cc7b9a23c72c
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

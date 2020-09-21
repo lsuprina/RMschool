@@ -1,0 +1,139 @@
+field: 063f1856-6981-4caa-85ca-5a2842fe313f
+fieldLayouts:
+  4e79db3f-9f22-445a-8452-944e5981444b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9b6f32dd-6e58-4258-84e1-39b72a26a406
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3518821f-2d9c-419f-9f6c-3457ca8e43fe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f97713a1-0546-40e0-92ce-0df6a863b2ee
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 693c8609-1d19-4b83-baeb-a675092d9899
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3518821f-2d9c-419f-9f6c-3457ca8e43fe:
+    contentColumnType: text
+    fieldGroup: null
+    handle: descriptionLearnMore
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  693c8609-1d19-4b83-baeb-a675092d9899:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageLearnMore
+    instructions: ''
+    name: 'Background image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:defb4ea0-0a2e-48ca-8cd4-2703b95c7f2d'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  9b6f32dd-6e58-4258-84e1-39b72a26a406:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleLearnMore
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f97713a1-0546-40e0-92ce-0df6a863b2ee:
+    contentColumnType: string
+    fieldGroup: null
+    handle: cardsLearnMore
+    instructions: ''
+    name: Cards
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '3'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - singles
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: learnMoreAbout
+name: 'Learn more'
+sortOrder: 2

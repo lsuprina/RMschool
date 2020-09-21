@@ -1,0 +1,31 @@
+{% set module = module %}
+
+<section class="about-network container-fluid">
+    
+    <div class="container">
+
+        <h3 class="col font-weight-bold color-primary">{{module.titleNetwork}}</h3>
+        <p class="col color-primary">{{module.descriptionNetwork}}</p>
+        
+        <div class="about-cards col d-flex flex-column flex-md-row justify-content-center align-items-center">
+           {% for card in module.cardsNetwork.all() %}
+               <div class="about-card col col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center mx-3">
+                    <a href="#!">
+                        <div class="card-img">
+                            <img src="{{card.image.one().url}}" alt="">
+                            <div class="card-title">
+                                <h3>{{card.title}}</h3>
+                            </div>
+                        </div>
+                        
+                            <div class="card-text d-flex flex-column justify-content-center p-5">{{card.description}}</div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <div class="card-button btn btn-outline-primary font-weight-bold">{{layout.learnMoreLabel}}</div>
+                        </div>
+                    </a>
+                </div>
+           {% endfor %}
+        </div>
+        
+    </div>
+</section>

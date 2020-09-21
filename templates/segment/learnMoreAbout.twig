@@ -1,0 +1,30 @@
+{% set module = module %}
+
+<section class="about-learn-more container-fluid">
+    <img src="{{module.imageLearnMore.one().url}}" class="pozadina" alt="">
+    <div class="container">
+        <h3 class="col font-weight-bold">{{module.titleLearnMore}}</h3>
+        <p class="col">{{module.descriptionLearnMore}}</p>
+        
+        <div class="about-cards col d-flex flex-column flex-md-row justify-content-center align-items-center">
+            {% for card in module.cardsLearnMore.all() %}
+                <div class="about-card col col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center mx-3">
+                    <a href="{{card.uri}}">
+                        <div class="card-img">
+                            <img src="{{card.image.one().url}}" alt="">
+                            <div class="card-title">
+                                <h3>{{card.title}}</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="card-text d-flex flex-column justify-content-center p-5">{{card.description}}</div>
+                        <div class="card-button btn btn-outline-primary font-weight-bold">
+                            {{layout.learnMoreLabel}}
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+</section>

@@ -17,16 +17,21 @@
 
         <div class="middle-row row">
 
-            {% for category in entries.footerCategory.all() %}
-                <div class="col-6 col-lg">
-                    <h5>{{category.title}}</h5>
-                    <ul class="list-group list-group-flush">
-                        {% for topic in category.topic.all() %}
-                            <li class="list-group-item"><a href="{{topic.topicUrl}}">{{topic.topicName|upper}}</a></li>    
-                        {% endfor %}
-                    </ul>
-                </div>
-            {% endfor %}   
+            {% set footerLinks = entries.footerLinks.all() %}
+            
+            {% for entries in footerLinks %}     
+                {% for entry in entries.footerCategory.all() %}
+                    <div class="col-6 col-lg"> 
+                        <h5>{{entry.title}}</h5>
+                        <ul class="list-group list-group-flush">
+                            {% for link in entry.footerLink %}
+                                <li class="list-group-item"><a href="{{link.footerUrl}}">{{link.footerUrl.getCustomText()|upper}}</a></li>
+                            {% endfor %}
+                        </ul> 
+                    </div>
+                {% endfor %}
+            {% endfor %}
+
             <div class="col offset-xl-3 offset-md-3 offset-sm-3">
                 <img class="img-fluid" src="{{entries.logo.one().url}}" alt="Logo">
                 <img class="img-fluid" src="{{entries.euText.one().url}}" alt="EU text">

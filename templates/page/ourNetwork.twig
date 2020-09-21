@@ -1,0 +1,28 @@
+{% extends "layout" %}
+
+{% block main %}
+    {% set entry = craft.entries().section('ourNetwork').one() %}
+
+    <section class="about-section container-fluid p-0 m-0">
+        
+        <img src="{{entry.image.one().url}}" alt="">
+
+        <div class="container">
+            {% set titleNetwork = entry.title|upper|split(' ',2) %}
+            <div class="row">
+                <h2 class="bg-success p-2">{{titleNetwork[0]}} </h2>
+            </div>
+            <div class="row">
+                <h2 class="bg-success p-2 mt-3 ml-5">{{titleNetwork[1]}}</h2>
+            </div>
+
+        </div>
+    </section>
+    {% set entry = craft.entries().section('ourNetwork').one() %}
+
+    {% if entry['ourNetworkBlocks'] is defined %}
+        {% for module in entry.ourNetworkBlocks.all() %}
+            {% include "segment/" ~ module.type ~ '.twig' with {'block' : module} %}
+        {% endfor %}
+    {% endif %}
+{% endblock %}

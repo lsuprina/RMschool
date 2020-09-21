@@ -1,5 +1,5 @@
 fieldLayouts:
-  12351e7e-af42-44cb-ab0e-ae2a62cd3435:
+  eff6e58e-bfe6-4f92-ab92-87ba1d8aaf60:
     tabs:
       -
         elements:
@@ -28,10 +28,10 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: studentsInActionSingle
+handle: circularEconomy
 hasTitleField: false
-name: 'STUDENTS IN ACTION single'
-section: 61fad334-e8ff-426c-af7a-0b69bdc15d34
+name: 'Circular economy'
+section: 137fd8f5-f249-41e0-9c19-277cdde1f5b1
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

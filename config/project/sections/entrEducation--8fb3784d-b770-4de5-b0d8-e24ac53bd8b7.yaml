@@ -1,11 +1,11 @@
 enableVersioning: true
-handle: teachingResources
-name: 'Teaching resources'
+handle: entrEducation
+name: 'Entrepreneuership education'
 propagationMethod: all
 siteSettings:
   0967bde6-f091-4666-b685-45e13bb32dee:
     enabledByDefault: true
     hasUrls: true
-    template: page\teachingResources
-    uriFormat: teaching-resources
+    template: null
+    uriFormat: entepreneurship-education
 type: single

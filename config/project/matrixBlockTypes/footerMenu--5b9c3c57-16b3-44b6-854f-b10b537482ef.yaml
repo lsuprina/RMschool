@@ -1,0 +1,43 @@
+field: 80914c3e-6018-4686-8b6a-a03f602963d0
+fieldLayouts:
+  af2dee2b-faed-47fd-b8e8-be4e11651627:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 32fb19cf-d303-490c-b5b0-5be5e2dbdd06
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  32fb19cf-d303-490c-b5b0-5be5e2dbdd06:
+    contentColumnType: string
+    fieldGroup: null
+    handle: footerCategory
+    instructions: ''
+    name: Category
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:dc79c7f6-7bf0-4dad-8e2b-a1160c6dfcd6'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: footerMenu
+name: 'Footer menu'
+sortOrder: 1

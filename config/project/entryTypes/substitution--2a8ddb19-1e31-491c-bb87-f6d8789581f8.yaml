@@ -1,5 +1,5 @@
 fieldLayouts:
-  ae71e2a0-b399-464c-bb95-0d9199f0d7f9:
+  58302ddc-c91c-481e-8820-ec5bd145c9d5:
     tabs:
       -
         elements:
@@ -10,8 +10,8 @@ fieldLayouts:
             class: null
             disabled: false
             id: null
-            instructions: ''
-            label: ''
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
@@ -26,30 +26,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
-          -
-            fieldUid: 5c91fda2-e84e-4484-bd53-c79ed3381b02
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 063f1856-6981-4caa-85ca-5a2842fe313f
-            instructions: ''
-            label: 'Page blocks'
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: Content
         sortOrder: 1
-handle: aboutUs
-hasTitleField: true
-name: 'About us'
-section: 98a22aa3-561d-407e-b1ad-5bba63d6eb71
+handle: substitution
+hasTitleField: false
+name: Substitution
+section: f541206c-4212-44ad-816a-eb361cde723c
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

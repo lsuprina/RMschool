@@ -1,4 +1,4 @@
-dateModified: 1600440689
+dateModified: 1600699994
 email:
   fromEmail: lidija.suprina@creative-square.agency
   fromName: school.test
@@ -21,7 +21,7 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: school.test
   schemaVersion: 3.5.13

@@ -1,23 +1,5 @@
-{% set events = craft.entries().section('event').orderBy('eventDate asc').all() %}
+{% extends "layout" %}
 
-<section class="container-fluid events">
-    <div class="container">
-        <div class="event-cards pt-3 d-flex flex-wrap justify-content-between align-items-center">
-            {% for event in events %}
-                <div class="p-2 col-12 col-sm-6 col-md-4">
-                    <div class="event-card">
-                        <div class="mb-n2 overflow-hidden d-flex justify-content-center align-items-center">
-                            <img src="{{event.image.one().url}}" alt="">
-                        </div>
-                        <span class="card-date mt-n4 p-2">{{event.eventDate|date('d.m.Y.')}}</span>
-                        <div class="event-card-text p-4 my-3">
-                            <span class="row font-weight-bold">{{event.title}}</span>
-                            <span class="row">{{event.subtitle}}</span>
-                        </div>
-                        <button class="btn btn-outline-primary ml-2">{{layout.moreDetailsLabel}}</button>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+{% block main %}
+
+{% endblock %}

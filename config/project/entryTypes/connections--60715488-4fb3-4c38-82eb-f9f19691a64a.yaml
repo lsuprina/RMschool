@@ -1,5 +1,5 @@
 fieldLayouts:
-  35feebdf-adbc-4185-8fb6-a9d56fb4e04f:
+  f51f1b21-3ff1-44c3-86f0-58087f0731d5:
     tabs:
       -
         elements:
@@ -23,11 +23,20 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\TitleField
+            type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
           -
-            fieldUid: 5b285790-8f09-4d88-9df8-230f175d34aa
+            fieldUid: 5c91fda2-e84e-4484-bd53-c79ed3381b02
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3a6afe25-67a1-4b72-ae4c-12618a865d72
             instructions: null
             label: null
             required: false
@@ -37,13 +46,11 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: navigationTopics
-name: 'Navigation topics'
-siteSettings:
-  0967bde6-f091-4666-b685-45e13bb32dee:
-    hasUrls: true
-    template: null
-    uriFormat: 'navigation-topics/{slug}'
-structure:
-  maxLevels: null
-  uid: a1952835-40ac-4add-b52d-778f936f3148
+handle: connections
+hasTitleField: true
+name: Connections
+section: 2376b9c9-ddff-4fa8-9f05-722acd9530ef
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

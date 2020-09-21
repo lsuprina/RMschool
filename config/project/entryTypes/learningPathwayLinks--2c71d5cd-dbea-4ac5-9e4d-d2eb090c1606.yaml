@@ -1,5 +1,5 @@
 fieldLayouts:
-  cb3278a8-2b36-4cf0-bf68-a11894c5f4fa:
+  cc96f883-579f-413a-9b53-cbf047f3313f:
     tabs:
       -
         elements:
@@ -26,30 +26,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
-          -
-            fieldUid: 3a6afe25-67a1-4b72-ae4c-12618a865d72
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 5c91fda2-e84e-4484-bd53-c79ed3381b02
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: Content
         sortOrder: 1
-handle: cards
+handle: learningPathwayLinks
 hasTitleField: true
-name: Cards
-section: ddaf32a5-8670-415d-8b4c-8118092a7fd4
+name: 'Learning pathway links'
+section: ff0909b5-7a7a-484d-a62a-78960f554687
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
