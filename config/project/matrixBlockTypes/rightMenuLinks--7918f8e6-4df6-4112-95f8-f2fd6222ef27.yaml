@@ -1,11 +1,11 @@
-field: 6cb5ebe0-6a64-4f35-b1f5-bfaed01dbd1c
+field: dffd32d4-4f65-4549-b7db-b8342e70627e
 fieldLayouts:
-  d8071781-2ce4-470a-95ec-391fcdbb04c0:
+  eb7f43f2-d1e4-4e43-8ffb-dbae769d656b:
     tabs:
       -
         elements:
           -
-            fieldUid: f0717b7f-3ba9-4357-a119-66259b20e42a
+            fieldUid: 3a56886b-a201-4ff1-9d5d-f4451b2b50a3
             instructions: null
             label: null
             required: false
@@ -16,12 +16,12 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  f0717b7f-3ba9-4357-a119-66259b20e42a:
+  3a56886b-a201-4ff1-9d5d-f4451b2b50a3:
     contentColumnType: text
     fieldGroup: null
-    handle: footerUrl
+    handle: rightMenuLink
     instructions: ''
-    name: 'Footer url'
+    name: 'Right menu link'
     searchable: false
     settings:
       allowCustomText: '1'
@@ -126,6 +126,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: typedlinkfield\fields\LinkField
-handle: footerUrls
-name: 'Footer urls'
+handle: rightMenuLinks
+name: 'Right menu links'
 sortOrder: 1

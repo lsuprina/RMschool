@@ -77,7 +77,7 @@ fields:
       showSiteMenu: true
       source: null
       sources:
-        - 'section:ddaf32a5-8670-415d-8b4c-8118092a7fd4'
+        - singles
       targetSiteId: null
       validateRelatedElements: false
       viewMode: null

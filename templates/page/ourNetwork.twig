@@ -18,6 +18,9 @@
 
         </div>
     </section>
+
+    {% include "common/breadcrumb.twig" %}
+
     {% set entry = craft.entries().section('ourNetwork').one() %}
 
     {% if entry['ourNetworkBlocks'] is defined %}

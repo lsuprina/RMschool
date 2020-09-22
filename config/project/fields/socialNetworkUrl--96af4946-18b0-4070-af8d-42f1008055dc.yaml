@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: bc989511-3fd9-4019-b7ab-663eeeedb1a6
+handle: socialNetworkUrl
+instructions: ''
+name: 'Social network URL'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

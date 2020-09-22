@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: bc989511-3fd9-4019-b7ab-663eeeedb1a6
+handle: sharePageLink
+instructions: ''
+name: 'Share page link'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:73ec1165-5e48-4a7a-825f-09248db5a22c'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

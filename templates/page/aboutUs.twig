@@ -21,6 +21,8 @@
         </div>
     </section>
 
+    {% include "common/breadcrumb.twig" %}
+
     {% set entry = craft.entries().section('aboutUs').one() %}
 
     {% if entry['aboutPageBlocks'] is defined %}

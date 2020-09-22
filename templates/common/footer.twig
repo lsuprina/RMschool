@@ -1,59 +1,61 @@
 </main>
 
-{% set entries = craft.entries().section('footer').one() %}
-{% set homepage = craft.entries().section('homepage').one() %}
-
 <footer id="footer" class="">
     <div class="container">
+
         <div class="top-row row col-12 py-4 mb-5">
-            <span class="share">Share Page:</span>
+            <span class="share">{{footer.sharePageTitle}}</span>
             <ul class="list-group list-group-horizontal">
-                {% for socialNetwork in entries.sharePage.all() %}
-                    <li class="list-group-item border-0 p-1 ml-3"><a class="{{socialNetwork.socialIcon.value}} icons text-decoration-none" 
-                        href="{{socialNetwork.socialUrl}}" target="_blank"></a></li>
+            {% set url = craft.app.request.absoluteUrl %}
+                {% for socialNetwork in footer.sharePageLink.all() %}
+                    <li class="list-group-item border-0 p-1 ml-3"><a class="{{socialNetwork.iconName}} icons text-decoration-none" 
+                        href="{{craft.simpleSharing.link(url,socialNetwork.title|lower)}}" target="_blank"></a></li>
                 {% endfor %}
             </ul>
         </div>
 
         <div class="middle-row row">
 
-            {% set footerLinks = entries.footerLinks.all() %}
-            
-            {% for entries in footerLinks %}     
-                {% for entry in entries.footerCategory.all() %}
-                    <div class="col-6 col-lg"> 
-                        <h5>{{entry.title}}</h5>
-                        <ul class="list-group list-group-flush">
-                            {% for link in entry.footerLink %}
-                                <li class="list-group-item"><a href="{{link.footerUrl}}">{{link.footerUrl.getCustomText()|upper}}</a></li>
-                            {% endfor %}
-                        </ul> 
-                    </div>
+
+        <div class="col-6 col-lg"> 
+            <h5>{{footer.leftMenuTitle}}</h5>
+            <ul class="list-group list-group-flush">
+                {% for link in footer.footerLeftMenu.all() %}
+                    <li class="list-group-item"><a href="{{link.leftMenuLink}}" target="{{link.leftMenuLink.getTarget()}}">{{link.leftMenuLink.getCustomText()|upper}}</a></li>
                 {% endfor %}
-            {% endfor %}
+            </ul> 
+        </div>
+
+        <div class="col-6 col-lg"> 
+            <h5>{{footer.rightMenuTitle}}</h5>
+            <ul class="list-group list-group-flush">
+                {% for link in footer.footerRightMenu.all() %}
+                    <li class="list-group-item"><a href="{{link.rightMenuLink}}" target="{{link.rightMenuLink.getTarget()}}">{{link.rightMenuLink.getCustomText()|upper}}</a></li>
+                {% endfor %}
+            </ul> 
+        </div>
 
             <div class="col offset-xl-3 offset-md-3 offset-sm-3">
-                <img class="img-fluid" src="{{entries.logo.one().url}}" alt="Logo">
-                <img class="img-fluid" src="{{entries.euText.one().url}}" alt="EU text">
+                <img class="img-fluid" src="{{footer.logo.one().url}}" alt="Logo">
+                <img class="img-fluid" src="{{footer.euText.one().url}}" alt="EU text">
             </div>
 
         </div>
 
 
         <div class="bottom-row row col-12 py-4 mt-4 align-items-center">
-
             <div class="footer-info col-12 col-sm-5 d-flex ">
-                {% for document in entries.footerDocs.all() %}
-                    <a href="{{document.document.one().url}}" target="_blank" class="mx-5">{{document.title|upper}}</a>
+                {% for document in footer.document.all() %}
+                    <a href="{{document.documentLink}}" target="{{document.documentLink.getTarget()}}" class="mx-5">{{document.documentLink.getCustomText()|upper}}</a>
                 {% endfor %}
             </div>
 
             <div class="d-flex col-12 col-sm-5 offset-2 align-items-center justify-content-sm-end justify-content-md-end ml-auto">
-                <span class="connect">Connect with us:</span>
+                <span class="connect">{{footer.socialNetworkTitle}}</span>
                 <ul class="list-group list-group-horizontal">
-                    {% for socialNetwork in entries.socialNetworks.all() %}
-                        <li class="list-group-item border-0 p-1 ml-3 "><a class="{{socialNetwork.socialIcon.value}} icons text-decoration-none" 
-                            href="{{socialNetwork.socialLink}}" target="_blank"></a></li>
+                    {% for socialNetwork in footer.socialNetworkEntries.all() %}
+                        <li class="list-group-item border-0 p-1 ml-3"><a class="{{socialNetwork.iconName}} icons text-decoration-none" 
+                            href="{{socialNetwork.socialNetworkUrl}}" target="_blank"></a></li>
                     {% endfor %}
                 </ul>
             </div>  
@@ -63,7 +65,7 @@
     </div>
 </footer>
 
-<?php // Site::getSegment('cookie_accept'); ?>
+
 
 <script src="./assets/js/script.min.js" type="text/javascript" charset="utf-8"></script>
 

@@ -1,8 +1,8 @@
 contentColumnType: text
 fieldGroup: bc989511-3fd9-4019-b7ab-663eeeedb1a6
-handle: showEventsLabel
+handle: socialNetworkTitle
 instructions: ''
-name: 'Show events label'
+name: 'Social network title'
 searchable: false
 settings:
   byteLimit: null

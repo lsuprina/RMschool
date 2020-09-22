@@ -1,11 +1,11 @@
-field: 8632b455-1f1f-4095-935c-5d1ea2d60a8b
+field: 41168f06-06d3-4dc8-8bb8-cc8d5f029c74
 fieldLayouts:
-  3aa3a03d-af7e-4f26-ae4f-993731d548e3:
+  666fa650-882d-4183-98fd-7bc30918c57c:
     tabs:
       -
         elements:
           -
-            fieldUid: d1f6cdba-6852-4383-be1d-2a300496b137
+            fieldUid: 5ab7bbcd-0cd9-4fef-92c7-90f98a5ddd0a
             instructions: null
             label: null
             required: false
@@ -16,12 +16,12 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  d1f6cdba-6852-4383-be1d-2a300496b137:
+  5ab7bbcd-0cd9-4fef-92c7-90f98a5ddd0a:
     contentColumnType: text
     fieldGroup: null
-    handle: learningPathLink
+    handle: leftMenuLink
     instructions: ''
-    name: 'Learning path link'
+    name: 'Left menu link'
     searchable: false
     settings:
       allowCustomText: '1'
@@ -126,6 +126,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: typedlinkfield\fields\LinkField
-handle: learningPathLinks
-name: 'Learning path links'
+handle: leftMenuLinks
+name: 'Left menu links'
 sortOrder: 1

@@ -1,5 +1,5 @@
 fieldLayouts:
-  cb3278a8-2b36-4cf0-bf68-a11894c5f4fa:
+  48905716-d0d8-4832-9e03-01dfbfe6fc28:
     tabs:
       -
         elements:
@@ -27,16 +27,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3a6afe25-67a1-4b72-ae4c-12618a865d72
-            instructions: null
-            label: null
-            required: false
+            fieldUid: 7d99504c-6525-4350-977f-3a012170283b
+            instructions: 'Choose an icon for social networks on this link https://fontawesome.com/icons?d=gallery. Write only the "class" value in this field. E.g. for "Facebook" write "fab fa-facebook".'
+            label: ''
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
-            fieldUid: 5c91fda2-e84e-4484-bd53-c79ed3381b02
+            fieldUid: 96af4946-18b0-4070-af8d-42f1008055dc
             instructions: null
             label: null
             required: false
@@ -46,10 +46,10 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: cards
+handle: socialNetworks
 hasTitleField: true
-name: Cards
-section: ddaf32a5-8670-415d-8b4c-8118092a7fd4
+name: 'Social Networks'
+section: 73ec1165-5e48-4a7a-825f-09248db5a22c
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

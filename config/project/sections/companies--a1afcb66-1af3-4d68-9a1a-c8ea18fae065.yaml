@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: companies
+name: Companies
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  0967bde6-f091-4666-b685-45e13bb32dee:
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: companies
+type: single

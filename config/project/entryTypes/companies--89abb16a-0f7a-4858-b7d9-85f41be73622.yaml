@@ -1,5 +1,5 @@
 fieldLayouts:
-  cc96f883-579f-413a-9b53-cbf047f3313f:
+  a4e23a25-36be-4cd2-a3cf-3faf012c3766:
     tabs:
       -
         elements:
@@ -26,13 +26,31 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
+          -
+            fieldUid: 3a6afe25-67a1-4b72-ae4c-12618a865d72
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5c91fda2-e84e-4484-bd53-c79ed3381b02
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
-handle: learningPathwayLinks
+handle: companies
 hasTitleField: true
-name: 'Learning pathway links'
-section: ff0909b5-7a7a-484d-a62a-78960f554687
+name: Companies
+section: a1afcb66-1af3-4d68-9a1a-c8ea18fae065
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -1,11 +1,11 @@
 contentColumnType: string
-fieldGroup: 6b1219ff-213c-4e36-abd9-4bba5cbe3f35
-handle: footerLinks
+fieldGroup: bc989511-3fd9-4019-b7ab-663eeeedb1a6
+handle: document
 instructions: ''
-name: 'Footer links'
+name: Document
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_footerlinks}}'
+  contentTable: '{{%matrixcontent_document}}'
   maxBlocks: ''
   minBlocks: ''
   propagationMethod: all

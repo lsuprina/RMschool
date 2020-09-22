@@ -1,4 +1,3 @@
-{% set navbar = craft.entries().section('navbar').one() %}
 {% set homepage = craft.entries().section('homepage').one() %}
 
 <div class="container-fluid">
@@ -6,30 +5,29 @@
 
 		<div class="logos">
       <a href="{{homepage.uri}}" class="navbar-brand py-0">
-        <img src="{{navbar.logo.one().url}}" alt="header" title="header" id="logo" class="img-fluid mb-2 mt-4">
+        <img src="{{header.logo.one().url}}" alt="header" title="header" id="logo" class="img-fluid mb-2 mt-4">
         
       </a>
       <a href="{{homepage.uri}}" class="navbar-brand py-0">
-          <img src="{{navbar.euText.one().url}}" alt="header" title="header" id="logo" class="img-fluid mb-2 mt-4"> 
+          <img src="{{header.euText.one().url}}" alt="header" title="header" id="logo" class="img-fluid mb-2 mt-4"> 
       </a>
     </div>
 
-		<button class="navbar-toggler d-flex d-xl-none justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler d-flex d-xl-none justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" 
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon mx-3"></span>
 		</button>
 
 		<div class="collapse navbar-collapse mt-auto" id="navbarTogglerDemo02">
       <div class="ml-auto pr-2 pt-4 pt-lg-0">
         <ul class="list-group list-group-horizontal ml-auto row justify-content-center justify-content-xl-end">
-          {% set socialNetworks = navbar.socialNetworks.all() %}
-          {% for socialNetwork in socialNetworks %}
-            <li class="list-group-item border-0 p-1 ml-3 "><a class="{{socialNetwork.socialIcon.value}} icons text-decoration-none" 
-              href="{{socialNetwork.socialLink}}" target="_blank"></a></li>
+          {% for socialNetwork in header.socialNetworkEntries.all() %}
+            <li class="list-group-item border-0 p-1 ml-3 "><a class="{{socialNetwork.iconName}} icons text-decoration-none" 
+              href="{{socialNetwork.socialNetworkUrl}}" target="_blank"></a></li>
           {% endfor %}
         </ul>
         <ul class="list-group list-group-horizontal-xl ml-auto mt-1 mb-3 row">
-          {% set menuLinks = navbar.menu.all() %}
-          {% for menuLink in menuLinks %}
+          {% for menuLink in header.menu.all() %}
               <li class="list-group-item border-0 p-0 ml-3 mt-2"><a class="text-decoration-none" href="{{menuLink.menuLink}}">{{menuLink.menuLink.getCustomText()|upper}}</a></li>          
           {% endfor %}
         </ul>

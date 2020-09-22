@@ -1,8 +1,8 @@
 contentColumnType: text
 fieldGroup: bc989511-3fd9-4019-b7ab-663eeeedb1a6
-handle: showEventsLabel
+handle: iconName
 instructions: ''
-name: 'Show events label'
+name: 'Icon name'
 searchable: false
 settings:
   byteLimit: null

@@ -1,4 +1,4 @@
-dateModified: 1600699994
+dateModified: 1600786542
 email:
   fromEmail: lidija.suprina@creative-square.agency
   fromName: school.test
@@ -8,7 +8,15 @@ email:
     command: ''
   transportType: craft\mail\transportadapters\Sendmail
 plugins:
+  breadcrumb:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.0
   cheat-sheet:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  country-select:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -16,6 +24,24 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  retcon:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  simple-sharing:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowedPlatforms: ''
+      allowedSections:
+        - '10'
+        - '17'
+        - '21'
+        - '2'
+        - '15'
+        - '19'
+        - '13'
   typedlinkfield:
     edition: standard
     enabled: true
@@ -23,7 +49,8 @@ plugins:
 system:
   edition: pro
   live: true
-  name: school.test
+  name: RM@Schools
+  retryDuration: null
   schemaVersion: 3.5.13
   timeZone: America/Los_Angeles
 users:

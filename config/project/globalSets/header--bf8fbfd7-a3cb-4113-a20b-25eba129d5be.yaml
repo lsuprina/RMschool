@@ -4,6 +4,41 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: 0e88b4f5-9ec7-46e9-83a8-eea51f1f932e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9f710753-6962-4083-a7bf-e359f9a3651b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Logo
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: eec9fb5d-55fc-4695-93d0-ec12088b6111
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Social network'
+        sortOrder: 2
+      -
+        elements:
+          -
             fieldUid: 8de0971d-8546-4da8-8b86-07f8e5480214
             instructions: null
             label: null
@@ -12,7 +47,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Header
-        sortOrder: 1
+        name: 'Navigation bar'
+        sortOrder: 3
 handle: header
 name: Header

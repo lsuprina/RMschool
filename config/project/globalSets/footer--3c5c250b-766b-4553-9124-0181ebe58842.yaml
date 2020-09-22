@@ -1,0 +1,128 @@
+fieldLayouts:
+  592a1d92-5694-4630-ae87-436e9f018c97:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 0e88b4f5-9ec7-46e9-83a8-eea51f1f932e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9f710753-6962-4083-a7bf-e359f9a3651b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Logo
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 5e13a679-c8ed-4675-9097-4a1c936b3e72
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 41168f06-06d3-4dc8-8bb8-cc8d5f029c74
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Left menu'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 5153f731-36a4-4045-a55c-f111f6391df6
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dffd32d4-4f65-4549-b7db-b8342e70627e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Right menu'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 47c5806f-a084-4629-a2c7-05032a0804c8
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: df2c6acc-abf7-4d11-99ab-719155e43ef8
+            instructions: 'Social networks for sharing pages include : Facebook, Twitter, LinkedIn, Mix, Tumblr, Reddit'
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Share page'
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 48186055-68f4-4a78-a150-0147e0205ba8
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Documents
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 5a4833f5-6e09-4660-88cc-3b180598d092
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eec9fb5d-55fc-4695-93d0-ec12088b6111
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Social network'
+        sortOrder: 6
+handle: footer
+name: Footer
