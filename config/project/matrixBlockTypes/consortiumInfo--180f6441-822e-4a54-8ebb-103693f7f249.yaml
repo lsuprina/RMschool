@@ -1,0 +1,71 @@
+field: 0141277a-e7d4-4b85-a17c-bbf23b53b1c9
+fieldLayouts:
+  405ebf6f-8ccc-4839-af32-750c7d14a342:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c1882fc5-3791-46c0-af2a-db1e4986ce42
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 60d24b1b-1f9b-4a2b-9559-b1bf08714f78
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  60d24b1b-1f9b-4a2b-9559-b1bf08714f78:
+    contentColumnType: string
+    fieldGroup: null
+    handle: slide
+    instructions: ''
+    name: Slide
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:3006f89d-6edd-448d-89d8-2e904c1dbdf5'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  c1882fc5-3791-46c0-af2a-db1e4986ce42:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleConsortium
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: consortiumInfo
+name: 'Consortium information'
+sortOrder: 2

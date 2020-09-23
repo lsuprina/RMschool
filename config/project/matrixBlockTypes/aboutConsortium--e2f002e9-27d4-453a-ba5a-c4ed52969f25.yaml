@@ -1,0 +1,77 @@
+field: 0141277a-e7d4-4b85-a17c-bbf23b53b1c9
+fieldLayouts:
+  b0ac1af8-521f-4d86-8e43-330e628931ad:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7fad1764-71a1-4838-a7c0-c9f113650f58
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e041ef05-146d-40b9-8130-0029cd5a1999
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7fad1764-71a1-4838-a7c0-c9f113650f58:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleConsortium
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e041ef05-146d-40b9-8130-0029cd5a1999:
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: aboutConsortium
+name: 'About consortium'
+sortOrder: 1

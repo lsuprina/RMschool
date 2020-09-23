@@ -10,7 +10,7 @@
         <div class="about-cards col d-flex flex-column flex-md-row justify-content-center align-items-center">
            {% for card in module.cardsNetwork.all() %}
                <div class="about-card col col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center mx-3">
-                    <a href="#!">
+                    <a href="{{card.uri}}">
                         <div class="card-img">
                             <img src="{{card.image.one().url}}" alt="">
                             <div class="card-title">

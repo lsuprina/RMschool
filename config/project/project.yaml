@@ -1,4 +1,4 @@
-dateModified: 1600786542
+dateModified: 1600871491
 email:
   fromEmail: lidija.suprina@creative-square.agency
   fromName: school.test
@@ -42,6 +42,26 @@ plugins:
         - '15'
         - '19'
         - '13'
+  simplemap:
+    edition: lite
+    enabled: true
+    schemaVersion: 3.4.2
+    settings:
+      apiKey: null
+      browserApiKey: null
+      disablePopulateMissingFieldData: false
+      geoLocationAutoRedirect: false
+      geoLocationCacheDuration: 5274000
+      geoLocationService: none
+      geoLocationToken: ''
+      geoService: nominatim
+      geoToken: ''
+      mapTiles: openstreetmap
+      mapToken: ''
+      serverApiKey: null
+      unrestrictedApiKey: null
+      w3wEnabled: ''
+      w3wToken: ''
   typedlinkfield:
     edition: standard
     enabled: true

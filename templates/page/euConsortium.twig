@@ -1,0 +1,26 @@
+{% extends "layout" %}
+
+{% block main %}
+    {% set entry = craft.entries().section('euConsortium').one() %}
+
+    <section class="about-section container-fluid p-0 m-0">
+    
+        <img src="{{entry.image.one().url}}" alt="">
+
+        <div class="container">
+            <div class="row">
+                <h2 class="bg-success p-2">{{entry.title}}</h2>
+            </div>
+        </div>
+    </section>
+
+    {% include "common/breadcrumb.twig" with entry %}
+
+    {% set entry = craft.entries().section('euConsortium').one() %}
+
+    {% if entry['euConsortiumBlocks'] is defined %}
+        {% for module in entry.euConsortiumBlocks.all() %}
+            {% include "segment/" ~ module.type ~ '.twig' with {'block' : module} %}
+        {% endfor %}
+    {% endif %}
+{% endblock %}

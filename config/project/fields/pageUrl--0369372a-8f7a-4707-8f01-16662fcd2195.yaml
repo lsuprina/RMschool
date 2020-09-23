@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: 6b1219ff-213c-4e36-abd9-4bba5cbe3f35
+handle: pageUrl
+instructions: ''
+name: 'Page URL'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

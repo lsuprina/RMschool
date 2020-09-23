@@ -1,5 +1,5 @@
 fieldLayouts:
-  99903be5-47cc-4920-b211-b819381e98dd:
+  face40c2-d4e5-44c3-82e2-2d194e33178b:
     tabs:
       -
         elements:
@@ -44,22 +44,13 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-          -
-            fieldUid: 0141277a-e7d4-4b85-a17c-bbf23b53b1c9
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: Content
         sortOrder: 1
-handle: euConsortium
+handle: consortiumInformation
 hasTitleField: true
-name: 'EU Consortium'
-section: 33f08002-7b69-40a5-860b-e92dcb7c6edc
+name: 'Consortium information'
+section: 3006f89d-6edd-448d-89d8-2e904c1dbdf5
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

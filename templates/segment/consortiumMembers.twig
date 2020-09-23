@@ -1,0 +1,47 @@
+{% set module = module %}
+
+<section class="about-section-text">
+    <div class="container">
+        <h3 class="font-weight-bold">{{module.titleConsortium}}</h3>
+        <p class="mb-5">{{module.description}}</p>
+        <div class="d-flex align-items-center justify-content-end mt-5">
+            <button class="btn btn-outline-success">{{layout.showCountriesLabel}}</button>
+        </div>
+    </div>
+</section>
+
+<section class="about-eu-members-list">
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            {% for entry in module.country.all() %}
+                {% set counter = 1 %}
+                <div class="card">
+                    <div class="card-header" id="target{{counter}}">
+                    
+                        <div class="d-flex" type="button" role="button" data-toggle="collapse" data-target="#notarget{{counter}}" aria-expanded="false" 
+                                aria-controls="notarget{{counter}}">
+                            <div class="card-title col d-flex justify-content-between align-items-center px-0 py-2">
+                                <div class="left d-flex flex-column">
+                                    <h4 class="font-weight-bold my-2">{{entry.title}}</h4>
+                                    <h5 class="font-weight-light">{{entry.subtitle|upper}}</h5>
+                                </div>
+                                <div class="right">
+                                    <button class="btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div id="notarget{{counter}}" class="collapse" aria-labelledby="target{{counter}}" data-parent="#accordionExample">
+                        <div class="card-body p-0 py-4 m-0">
+                            <p class="mb-2">{{entry.description}}</p>
+                            <div class="btn btn-success my-3"><a href="{{entry.pageUrl}}" target="_blank">{{entry.pageUrl}}</a></div>
+                        </div>
+                    </div>
+                </div>
+                {% set counter = counter + 1 %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

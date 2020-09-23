@@ -21,7 +21,7 @@
         </div>
     </section>
 
-    {% include "common/breadcrumb.twig" %}
+    {% include "common/breadcrumb.twig" with entry %}
 
     {% set entry = craft.entries().section('aboutUs').one() %}
 

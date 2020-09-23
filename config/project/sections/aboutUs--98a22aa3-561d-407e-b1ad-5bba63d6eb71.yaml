@@ -7,5 +7,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: page\aboutUs
-    uriFormat: about-us
+    uriFormat: '{slug}'
 type: single

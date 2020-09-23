@@ -1,6 +1,6 @@
 enableVersioning: true
-handle: euConsortium
-name: 'EU Consortium'
+handle: consortiumInformation
+name: 'Consortium information'
 previewTargets:
   -
     __assoc__:
@@ -18,6 +18,6 @@ siteSettings:
   0967bde6-f091-4666-b685-45e13bb32dee:
     enabledByDefault: true
     hasUrls: true
-    template: page\euConsortium
-    uriFormat: eu-consortium
-type: single
+    template: null
+    uriFormat: 'consortium-information/{slug}'
+type: channel

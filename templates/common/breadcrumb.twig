@@ -1,12 +1,21 @@
-{% set breadcrumb = craft.breadcrumb.config %}
+{% set element = entry.breadcrumb %}
 
-{% if breadcrumb %}
+{% set mySettings =
+    {
+        customFieldHandleEntryId: element.id,
+        customFieldHandle: 'breadcrumb'
+    }
+%}
+
+{% set breadcrumbs = craft.breadcrumb.config(mySettings) %}
+
+{% if breadcrumbs %}
 <div class="c-breadcrumb">
     <ul class="breadcrumb">
-        {% for crumb in breadcrumb  %}
+        {% for crumb in breadcrumbs  %}
             {% if loop.last %}
             <li class="c-breadcrumb__item">
-                <span>{{ crumb.title }}</span>
+                <span>{{ element.title }}</span>
             </li>
             {% else %}
             <li class="c-breadcrumb__item">

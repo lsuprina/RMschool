@@ -1,0 +1,99 @@
+field: 0141277a-e7d4-4b85-a17c-bbf23b53b1c9
+fieldLayouts:
+  e8e73c10-4202-4d56-a59f-ffbfaa659b65:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 28d42f24-a40c-4c31-8ef9-81e785015243
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 66405e19-5a5d-4092-835e-3649c350d46f
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6cdfdfc5-030b-4313-a199-c4351c5ca617
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  28d42f24-a40c-4c31-8ef9-81e785015243:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleConsortium
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  66405e19-5a5d-4092-835e-3649c350d46f:
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6cdfdfc5-030b-4313-a199-c4351c5ca617:
+    contentColumnType: string
+    fieldGroup: null
+    handle: country
+    instructions: ''
+    name: Country
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:022a2853-ae85-400b-8f81-cc27abf0b620'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: consortiumMembers
+name: 'Consortium members'
+sortOrder: 3
